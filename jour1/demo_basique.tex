@@ -1,0 +1,157 @@
+\documentclass[twoside, twocolumn, a4paper]{book}
+% ECRIRE DU FRANCAIS (Ou autres)
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{lipsum}
+\usepackage{blindtext}
+\usepackage[Lenny]{fncychap}
+\usepackage{amsmath}
+\usepackage{SIunits} % Gestion des unités physiques
+\blindmathtrue
+\usepackage{hyperref} % Liens hyperref
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=green,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+
+
+
+% Un commentaire
+
+\title{Mon premier document \LaTeX}
+
+\author{Ludovic Charleux}
+\date{Lundi !}
+
+
+\begin{document} 
+\maketitle
+\tableofcontents
+\frontmatter % Préambule
+
+\chapter{Une introduction à \LaTeX}
+\section{Taper du texte}
+%\lipsum{1}
+\blindtext[10]
+
+\mainmatter % Corps du document
+\chapter{Utilisation des mathématiques}
+\section{Et faire des mathématiques}
+\subsection{Les équations}
+
+$$
+a = \int_0^\infty \sin\alpha d\alpha u_i^j
+$$
+
+$$
+\sum_i^j
+$$
+
+$$
+M_{ij}
+$$
+
+$$
+\underbrace{A = B}_{\mbox{Une équation}}
+$$
+
+J'ai fait des maths dans l'équation \ref{eq:einstein} (voir page \pageref{eq:einstein}).
+
+\begin{equation}
+E = mc^2
+\label{eq:einstein}
+\end{equation}
+
+\begin{eqnarray}
+A & = & 5 + 5 \nonumber \\
+  & = & 10
+\end{eqnarray}
+
+\begin{align}
+A & = & 5 +  5 & + 5 \\
+  & = & 10     & + 5
+\end{align}
+
+
+$$
+M = 
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 
+\end{bmatrix}
+ = 0
+$$
+
+
+\subsection{Des maths en ligne}
+On a une formule avec $\alpha$ dedans. 
+
+$$
+u = \cos \alpha
+$$
+
+\subsection{Les unités physiques avec siunits}
+
+La mauvaise manière:
+$$
+P = 1MPa
+$$
+
+La bonne manière:
+
+$$
+A = \unit{4}\angstrom\per\second\squared 
+$$
+
+\chapter{Les packages indispensables}
+\label{chap:packages}
+
+\section{Hyperref}
+
+Le package crée des liens internes au document et externes( web, \ldots):
+\begin{itemize}
+\item Un lien vers l'équation \ref{eq:einstein}, ou le chapitre \ref{chap:packages} sur les packages. Ça marche aussi avec les notes des bas de page\footnote{Une note de bas de page.}
+\item Des liens externes \url{www.google.com}, ou \href{www.google.com}{un moteur de recherche.}
+\end{itemize}
+
+\begin{enumerate}
+\item rtttt
+  \begin{enumerate}
+  \item Une sous liste,
+  \item gggg
+  \end{enumerate}
+\item ttt
+\end{enumerate}
+
+\begin{description}
+\item[Le lapin]: grandes oreilles,
+\item[Le loup]: grandes dents,
+\end{description}
+
+\section{Geometry}
+
+
+
+\backmatter
+\appendix % annexes et bibliographie
+\chapter{Une annexe}
+\section{Une section}
+\end{document}
