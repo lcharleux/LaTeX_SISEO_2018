@@ -1,0 +1,21 @@
+\documentclass[twoside, twocolumn, a4paper]{book}
+\usepackage{style} % Style du document
+
+\title{Mon premier document \LaTeX}
+\author{Ludovic Charleux}
+\date{Lundi !}
+
+\begin{document} 
+\maketitle
+\tableofcontents
+\listoffigures
+\frontmatter % Préambule
+\include{introduction/introduction}
+%\include{introduction/introduction}\include{introduction/introduction}
+
+
+\mainmatter % Corps du document
+\include{tables/tables}
+\appendix % Annexes
+
+\end{document}

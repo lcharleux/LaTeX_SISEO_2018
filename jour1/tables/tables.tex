@@ -1,0 +1,58 @@
+\chapter{Environnements tabulaires}
+
+Il existe deux environnements basiques pour faire des tableaux en \LaTeX.
+
+
+\section{Environnement tabular}
+
+Du texte avant le tableau \ldots
+
+\begin{tabular}{ccc} % lcr = left, centered, right
+\hline
+\multicolumn{2}{c}{Opérandes} & Résultat \\
+$A$ & $B$ & $A+B$ \\
+%\hline
+\multirow{3}{*}{0} & 0 & 0 \\
+ & 1 & 1 \\
+ & 2 & 2 \\
+\hline
+\end{tabular}
+
+Du texte après le tableau \ldots
+
+\begin{figure}
+\begin{center}
+\begin{tabular}{ccc} % lcr = left, centered, right
+\hline
+\multicolumn{2}{c}{Opérandes} & Résultat \\
+$A$ & $B$ & $A+B$ \\
+%\hline
+\multirow{3}{*}{0} & 0 & 0 \\
+ & 1 & 1 \\
+ & 2 & 2 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Les maths du XXIième siècle.}
+\label{tab:maths}
+\end{figure}
+
+\section{L'environnement Table}
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{ccc} % lcr = left, centered, right
+\hline
+\multicolumn{2}{c}{Opérandes} & Résultat \\
+$A$ & $B$ & $A+B$ \\
+%\hline
+\multirow{3}{*}{0} & 0 & 0 \\
+ & 1 & 1 \\
+ & 2 & 2 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Les maths du XXIième siècle.}
+\label{tab:maths}
+\end{table}
