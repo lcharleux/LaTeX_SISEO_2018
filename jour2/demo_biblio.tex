@@ -1,0 +1,73 @@
+\documentclass[twoside, twocolumn, a4paper]{article}
+\usepackage{style} % Style du document
+
+
+\title{Gérer la bibliographie avec \LaTeX}
+\author{Ludovic Charleux}
+\date{mardi}
+
+\begin{document} 
+\maketitle
+\tableofcontents
+\section{Citer un article avec BIBteX}
+
+Je cite \citenum{Alkorta2011} et \citep{Atkins1965,Fitzgerald1999} et aussi \citep{Baltazar2002} et ça marche.
+
+%\bibliographystyle{plainnat} % plainnat,abbrvnat,unsrtnat
+%
+%\bibliography{/home/lcharleux/Documents/Recherche/Bibliography/Mendeley/bibtex/library}
+
+
+% CONTENU DU BBL
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[a.G. Atkins and Tabor(1965)]{Atkins1965}
+a.G. Atkins and D.~Tabor.
+\newblock {Plastic indentation in metals with cones}.
+\newblock \emph{J. Mech. Phys. Solids}, 13\penalty0 (3):\penalty0 149--164,
+  1965.
+\newblock ISSN 00225096.
+\newblock \doi{10.1016/0022-5096(65)90018-9}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0022509665900189}.
+
+\bibitem[Alkorta and Sevillano(2004)]{Alkorta2011}
+J~Alkorta and J~G Sevillano.
+\newblock {Measuring the strain rate sensitivity by instrumented indentation.
+  Application to an ultrafine grain (equal channel angular-pressed) eutectic
+  Sn-Bi alloy}.
+\newblock \emph{J. Mater. Res.}, 19\penalty0 (1):\penalty0 282--290, mar 2004.
+\newblock ISSN 0884-2914.
+\newblock \doi{10.1557/jmr.2004.19.1.282}.
+
+\bibitem[Avila et~al.(1999)Avila, Velilla, and Retuert]{Fitzgerald1999}
+RE~Avila, TP~Velilla, and PJ~Retuert.
+\newblock {Lower crystallization temperature of sol-gel PbTiO3 on Ti/Pt-coated
+  substrates}.
+\newblock \emph{J. Mater. {\ldots}}, 14\penalty0 (6):\penalty0 2369--2372,
+  1999.
+\newblock ISSN 08842914.
+\newblock URL
+  \url{http://journals.cambridge.org/abstract{\_}S0884291400050196}.
+
+\bibitem[Baltazar et~al.(2002)Baltazar, Rokhlin, and Pecorari]{Baltazar2002}
+Arturo Baltazar, Stanislav~I. Rokhlin, and Claudio Pecorari.
+\newblock {On the relationship between ultrasonic and micromechanical
+  properties of contacting rough surfaces}.
+\newblock \emph{J. Mech. Phys. Solids}, 50\penalty0 (7):\penalty0 1397--1416,
+  2002.
+\newblock ISSN 00225096.
+\newblock \doi{10.1016/S0022-5096(01)00119-3}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0022509601001193
+  http://www.sciencedirect.com/science/article/pii/S0022509601001193}.
+
+\end{thebibliography}
+
+
+\end{document}
