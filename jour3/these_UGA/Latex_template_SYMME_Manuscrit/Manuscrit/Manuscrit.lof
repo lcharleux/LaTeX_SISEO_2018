@@ -1,0 +1,18 @@
+\select@language {french}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 1}{3}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Figure simple\relax }}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Figure double\relax }}{4}{figure.caption.8}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Figure triple\relax }}{5}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 2}{7}{chapter.2}
+\select@language {english}
+\select@language {francais}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 3}{9}{chapter.3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 4}{11}{chapter.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 5}{13}{chapter.5}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Annexe 1}{VI}{appendix.A}

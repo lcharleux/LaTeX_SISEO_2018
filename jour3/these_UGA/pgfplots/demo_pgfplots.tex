@@ -1,0 +1,45 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{pgfplots}
+\author{Ludovic}
+\title{Graphiques avec PGFplots}
+\usepackage{siunitx}
+\begin{document}
+\maketitle
+
+\begin{center}
+  \begin{tikzpicture}
+    \begin{axis}[width = \textwidth,
+                 height = .6\textwidth,
+                 grid=both,
+                 grid style={line width=.1pt, 
+                             draw=gray!10},
+                 major grid style={line width=.2pt,            
+                                   draw=gray!50},
+                 ]
+      \addplot [thick, 
+                color = red] 
+       table [x=t,
+              y=v1,
+              col sep = comma] 
+       {data.csv};
+      \addplot [thick, 
+                color = blue] 
+       table [x=t,
+              y=v2,
+              col sep = comma] 
+       {data.csv};         
+    \end{axis}
+  \end{tikzpicture}
+\end{center}
+
+\SI{1}{\micro\meter} 
+
+\end{document}

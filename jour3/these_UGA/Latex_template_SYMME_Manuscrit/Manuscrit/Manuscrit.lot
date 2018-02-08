@@ -1,0 +1,16 @@
+\select@language {french}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 1}{3}{chapter.1}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Tableau\relax }}{5}{table.caption.10}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 2}{7}{chapter.2}
+\select@language {english}
+\select@language {francais}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 3}{9}{chapter.3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 4}{11}{chapter.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Chapitre 5}{13}{chapter.5}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Annexe 1}{VI}{appendix.A}
